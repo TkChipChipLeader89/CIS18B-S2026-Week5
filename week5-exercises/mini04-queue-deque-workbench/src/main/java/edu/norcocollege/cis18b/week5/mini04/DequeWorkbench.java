@@ -27,7 +27,8 @@ public class DequeWorkbench {
 
         undoStack.push("rename file");
         undoStack.push("insert checkpoint");
-
+        undoStack.push("delete file");
+        
         while (!undoStack.isEmpty()) {
             System.out.println("Undo popped: " + undoStack.pop());
         }
