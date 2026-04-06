@@ -24,7 +24,9 @@ public class CollectionSelectionClinic {
             new Scenario("Unique course codes", "Set", "Values should appear once.", "LinkedHashSet"),
             new Scenario("Student score lookup by ID", "Map", "Key-based lookup is the core operation.", "HashMap"),
             new Scenario("Help desk intake", "Queue", "First ticket in should be processed first.", "ArrayDeque"),
-            new Scenario("Undo operations", "Deque", "LIFO behavior is needed for undo.", "ArrayDeque")
+            new Scenario("Undo operations", "Deque", "LIFO behavior is needed for undo.", "ArrayDeque"),
+            // Added New Scenario and Justified the choice
+            new Scenario ("T-Rex dinosaur sightings log", "List", "Sightings can happen multiple times and order matters based on when they are seen.","ArrayList")
         );
 
         for (Scenario scenario : scenarios) {
