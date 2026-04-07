@@ -27,9 +27,12 @@ public class AgendaEditor {
             }
 
             // TODO: Remove any item labeled "Optional" using iterator-safe mutation.
+            // TODO completed: remove any item labeled "Optional" using iterator-safe mutation
+            if ("Optional".equals(step)) {
+                iterator.remove();
+            }
         }
     }
-
     static void printReverse(List<String> agenda) {
         ListIterator<String> reverse = agenda.listIterator(agenda.size());
         List<String> reversed = new ArrayList<>();
