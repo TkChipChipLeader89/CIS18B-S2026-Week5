@@ -27,4 +27,9 @@ public class Playlist implements Iterable<PlaylistItem> {
     }
 
     // TODO: Add a third traversal strategy for the extension challenge.
+    public Iterator<PlaylistItem> alphabeticalIterator() {
+        List<PlaylistItem> sorted = new ArrayList<>(items);
+        sorted.sort(Comparator.comparing(PlaylistItem::getName));
+        return sorted.iterator();
+    }
 }
